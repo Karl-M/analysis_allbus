@@ -10,7 +10,7 @@ library(bamixed)
 library(dplyr)
 library(magrittr)
 
-
+n
 
 setwd("~/Documents/daten/R/allbus_14/")
 
