@@ -11,7 +11,7 @@ library(dplyr)
 library(magrittr)
 
 
-rm(list = ls())
+
 setwd("~/Documents/daten/R/allbus_14/")
 
 all <- read_dta("~/Documents/daten/R/allbus_14/ZA5240_v2-1-0.dta")
@@ -52,3 +52,7 @@ all.miss$p <- paste( lapply(all, function(x) attributes(x)$label), names(all), s
 
 
 plot_missings(all.miss[1:100, ], "y", lbs = 8) + xlim(0, 500)
+
+
+
+### mal schauen, ob das hier dann im test branch ist, und nicht im master branch
