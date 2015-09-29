@@ -47,3 +47,21 @@ for(i in 1:nrow(all)) {
    index[i]  <- apply(all, 2, function(x) x == kodierungen[, 1])
 }
 
+
+i <- apply(all, 2, function(x) x == kodierungen[, 1]) %>% as.data.frame()
+
+iall <- apply(all[1:100], 2, function(x) sum(x == 9, na.rm = T))
+dim(iall)
+isums <- apply(i[1:100], 2, function(x) sum(x, na.rm = T))
+
+
+table(all$V99)
+all$V99
+length(all$V99[all$V99 == 99])
+attributes(all$V99)$labels
+class(i)
+dim(i)
+isums[1:100]
+iall[1:100]
+isums == iall
+jaaa[50:60]
